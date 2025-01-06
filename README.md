@@ -91,9 +91,9 @@ Evaluate the model using the following metrics:
 - Test the model with individual samples to predict whether a news article is fake or real, and compare predictions with actual labels.
 
 
-# Results and Outputs
+## Results and Outputs
 
-## Key Metrics
+### Key Metrics
 
 - Accuracy: The accuracy of the model on the test data is displayed.
 
@@ -101,6 +101,6 @@ Evaluate the model using the following metrics:
 
 - Classification Report: Comprehensive metrics for each class are presented.
 
-## Sample Prediction
+### Sample Prediction
 
 Example predictions demonstrate the functionality and reliability of the model.
