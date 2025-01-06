@@ -12,13 +12,7 @@ The [WELFake dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-c
 
 - Text: The main content of the news article.
 
-- Label: Binary classification of the article:
-
-0: Fake
-
-1: Real
-
-This dataset is published in the IEEE Transactions on Computational Social Systems (DOI: 10.1109/TCSS.2021.3068519).
+- Label: Binary classification of the article: [ 0: Fake, 1: Real ]
 
 ## Prerequisites
 
