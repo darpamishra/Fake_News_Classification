@@ -2,7 +2,7 @@
 
 ## About the Dataset
 
-The {WELFake dataset}(https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification) is a curated collection of 72,134 news articles, meticulously balanced between 35,028 real and 37,106 fake news entries. By merging data from Kaggle, McIntire, Reuters, and BuzzFeed Political datasets, it offers a diverse and robust platform for fake news detection tasks. This combined dataset addresses overfitting challenges and enhances the effectiveness of machine learning models by providing richer textual data.
+The [WELFake dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification) is a curated collection of 72,134 news articles, meticulously balanced between 35,028 real and 37,106 fake news entries. By merging data from Kaggle, McIntire, Reuters, and BuzzFeed Political datasets, it offers a diverse and robust platform for fake news detection tasks. This combined dataset addresses overfitting challenges and enhances the effectiveness of machine learning models by providing richer textual data.
 
 ## Dataset Structure
 
