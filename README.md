@@ -6,13 +6,13 @@ The [WELFake dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-c
 
 ## Dataset Structure
 
-Serial Number: Unique index for each entry.
+- Serial Number: Unique index for each entry.
 
-Title: The headline of the news article.
+- Title: The headline of the news article.
 
-Text: The main content of the news article.
+- Text: The main content of the news article.
 
-Label: Binary classification of the article:
+- Label: Binary classification of the article:
 
 0: Fake
 
@@ -24,88 +24,88 @@ This dataset is published in the IEEE Transactions on Computational Social Syste
 
 Ensure the following Python libraries are installed before using the dataset:
 
-numpy
+- numpy
 
-pandas
+- pandas
 
-nltk
+- nltk
 
-scikit-learn
+- scikit-learn
 
-seaborn
+- seaborn
 
-matplotlib
+- matplotlib
 
-To suppress unnecessary warnings, use the warnings library.
+- To suppress unnecessary warnings, use the warnings library.
 
 ## Workflow for Data Analysis
 
 ### Step 1: Load and Clean the Data
 
-Read the dataset into a Pandas DataFrame.
+- Read the dataset into a Pandas DataFrame.
 
-Drop irrelevant columns such as Unnamed: 0.
+- Drop irrelevant columns such as Unnamed: 0.
 
-Handle missing values by replacing them with blank spaces.
+- Handle missing values by replacing them with blank spaces.
 
 ### Step 2: Visualize Data Distribution
 
-Plot a count chart using Seaborn to visualize the proportion of fake versus real news articles.
+- Plot a count chart using Seaborn to visualize the proportion of fake versus real news articles.
 
 ### Step 3: Preprocess Text Data
 
-Apply the Porter Stemmer to preprocess the text in the title column. The process includes:
+- Apply the Porter Stemmer to preprocess the text in the title column. The process includes:
 
-Lowercasing all text.
+- Lowercasing all text.
 
-Removing non-alphabetic characters.
+- Removing non-alphabetic characters.
 
-Tokenizing the text into words.
+- Tokenizing the text into words.
 
-Removing stopwords.
+- Removing stopwords.
 
-Stemming the words to their root forms.
+- Stemming the words to their root forms.
 
-After preprocessing, drop the text column to focus solely on the title for analysis.
+- After preprocessing, drop the text column to focus solely on the title for analysis.
 
 ### Step 4: Convert Text to Features
 
-Use TfidfVectorizer to transform the title column into numerical vectors, enabling machine learning compatibility.
+- Use TfidfVectorizer to transform the title column into numerical vectors, enabling machine learning compatibility.
 
 ### Step 5: Train-Test Split
 
-Split the dataset into training and testing sets (80% training, 20% testing).
+- Split the dataset into training and testing sets (80% training, 20% testing).
 
-Stratify the split to maintain label distribution consistency.
+- Stratify the split to maintain label distribution consistency.
 
 ### Step 6: Train a Logistic Regression Model
 
-Train a Logistic Regression model on the training dataset.
+- Train a Logistic Regression model on the training dataset.
 
 ### Step 7: Evaluate Model Performance
 
 Evaluate the model using the following metrics:
 
-Accuracy Score: Measures the overall correctness of predictions.
+- Accuracy Score: Measures the overall correctness of predictions.
 
-Confusion Matrix: Visualizes the count of true positives, true negatives, false positives, and false negatives.
+- Confusion Matrix: Visualizes the count of true positives, true negatives, false positives, and false negatives.
 
-Classification Report: Provides precision, recall, F1-score, and support for each class.
+- Classification Report: Provides precision, recall, F1-score, and support for each class.
 
 ### Step 8: Make Predictions
 
-Test the model with individual samples to predict whether a news article is fake or real, and compare predictions with actual labels.
+- Test the model with individual samples to predict whether a news article is fake or real, and compare predictions with actual labels.
 
 
 # Results and Outputs
 
 ## Key Metrics
 
-Accuracy: The accuracy of the model on the test data is displayed.
+- Accuracy: The accuracy of the model on the test data is displayed.
 
-Confusion Matrix: A heatmap visualizes the prediction breakdown.
+- Confusion Matrix: A heatmap visualizes the prediction breakdown.
 
-Classification Report: Comprehensive metrics for each class are presented.
+- Classification Report: Comprehensive metrics for each class are presented.
 
 ## Sample Prediction
 
